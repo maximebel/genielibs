@@ -7886,6 +7886,15 @@
       "url": "https://github.com/CiscoTestAutomation/genielibs/tree/master/pkgs/sdk-pkg/src/genie/libs/sdk/apis/junos/configuration/get.py#L79"
     }
   },
+  "get_configuration_interface_field": {
+    "junos": {
+      "doc": " Get interface configuration\n        show configuration interface {interface}\n\n    Args:\n        device (obj): Device object\n        interface (str): Interface name\n        unit (str): Unit value\n        field (str): field name where want to get value\n\n    Returns:\n        value (`str`): field or null\n    ",
+      "module_name": "configuration.get",
+      "package": "genie.libs.sdk.apis",
+      "uid": "get_configuration_interface_field",
+      "url": "https://github.com/CiscoTestAutomation/genielibs/tree/master/pkgs/sdk-pkg/src/genie/libs/sdk/apis/junos/configuration/get.py#L114"
+    }
+  },
   "get_configuration_mpls_label_switched_path_name": {
     "junos": {
       "doc": " Get path name from show configuration protocols mpls label-switched-path {path}\n\n    Args:\n        device (obj): Device object\n        path (str): File to check\n\n    Returns:\n        str or None: Configured primary name\n    ",
@@ -21150,15 +21159,6 @@
       "package": "genie.libs.sdk.apis",
       "uid": "verify_specific_route",
       "url": "https://github.com/CiscoTestAutomation/genielibs/tree/master/pkgs/sdk-pkg/src/genie/libs/sdk/apis/junos/routing/verify.py#L829"
-    }
-  },
-  "verify_state": {
-    "iosxe": {
-      "doc": "Trigger Pre-Processor:\n        * verify state:\n    ",
-      "module_name": "prepostprocessor.processors",
-      "package": "genie.libs.sdk.apis",
-      "uid": "verify_state",
-      "url": "https://github.com/CiscoTestAutomation/genielibs/tree/master/pkgs/sdk-pkg/src/genie/libs/sdk/apis/iosxe/prepostprocessor/processors.py#L49"
     }
   },
   "verify_static_arp": {

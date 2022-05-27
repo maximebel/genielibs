@@ -110,3 +110,37 @@ def get_configuration_interface_family_bridge_vlan_id(device, interface,
     vlan_id = out.q.get_values('vlan-id', 0)
     
     return vlan_id if vlan_id else None
+
+def get_configuration_interface_field(device, interface, unit, field):
+    """ Get interface configuration
+        show configuration interface {interface}
+
+    Args:
+        device (obj): Device object
+        interface (str): Interface name
+        unit (str): Unit value
+        field (str): field name where want to get value
+
+    Returns:
+        value (`str`): field or null
+    """
+
+    try:
+        out = device.parse('show configuration interfaces {interface} unit {unit}'.format(
+            interface=interface, unit=unit
+        ))
+    except SchemaEmptyParserError:
+        return None
+    # Example dict
+    # 'configuration': {
+    #             'interfaces': {
+    #                 'interface': {
+    #                     'name': 'ge-0/0/1',
+    #                     'vlan-id' : '123',
+    #                     'encapsulation' : 'vlan-ccc',
+    #                     'output-vlan-map' : {
+    #                        'swap': [None]
+    #                     },
+    field_value = out.q.get_values(field, 0)
+
+    return field_value if field_value else None
