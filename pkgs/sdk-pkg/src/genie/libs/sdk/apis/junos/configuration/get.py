@@ -159,8 +159,8 @@ def get_configuration_protocols_l2circuit(device, interface, unit):
     """
 
     try:
-        out = device.parse('show configuration protocols l2circuit local-switching interface {interface}.{unit}'.format(
-            interface=interface, unit=unit
+        out = device.parse('show configuration protocols l2circuit local-switching interface {interface}'.format(
+            interface=f"{interface}.{unit}"
         ))
     except SchemaEmptyParserError:
         return None
