@@ -7913,6 +7913,15 @@
       "url": "https://github.com/CiscoTestAutomation/genielibs/tree/master/pkgs/sdk-pkg/src/genie/libs/sdk/apis/junos/configuration/get.py#L46"
     }
   },
+  "get_configuration_protocols_l2circuit": {
+    "junos": {
+      "doc": " Get interface configuration\n        show configuration interface {interface}\n\n    Args:\n        device (obj): Device object\n        interface (str): Interface name\n        unit (str): Unit value\n\n    Returns:\n        value (`str`): field or null\n    ",
+      "module_name": "configuration.get",
+      "package": "genie.libs.sdk.apis",
+      "uid": "get_configuration_protocols_l2circuit",
+      "url": "https://github.com/CiscoTestAutomation/genielibs/tree/master/pkgs/sdk-pkg/src/genie/libs/sdk/apis/junos/configuration/get.py#L148"
+    }
+  },
   "get_configured_bgp_peers": {
     "iosxe": {
       "doc": " Get configured BGP peers\n        Args:\n            device ('obj'): Device object\n            bgp_as ('int'): AS number\n            router_bgp_address_family ('str'): Address family of router bgp\n            vrf ('str'): VRf name\n        Returns:\n            Dictionary\n        Raises:\n            None\n\n    ",
