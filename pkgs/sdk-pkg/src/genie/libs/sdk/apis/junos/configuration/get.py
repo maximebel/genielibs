@@ -143,6 +143,8 @@ def get_configuration_interface_field(device, interface, unit, field):
     #                     },
     field_value = out.q.get_values(field, 0)
 
+
+
     return field_value if field_value else None
 
 def get_configuration_protocols_l2circuit(device, interface, unit):
