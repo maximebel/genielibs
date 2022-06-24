@@ -143,4 +143,39 @@ def get_configuration_interface_field(device, interface, unit, field):
     #                     },
     field_value = out.q.get_values(field, 0)
 
+
+
+    return field_value if field_value else None
+
+def get_configuration_protocols_l2circuit(device, interface, unit):
+    """ Get interface configuration
+        show configuration interface {interface}
+
+    Args:
+        device (obj): Device object
+        interface (str): Interface name
+        unit (str): Unit value
+
+    Returns:
+        value (`str`): field or null
+    """
+
+    try:
+        out = device.parse('show configuration protocols l2circuit local-switching interface {interface}'.format(
+            interface=f"{interface}.{unit}"
+        ))
+    except SchemaEmptyParserError:
+        return None
+    # Example dict
+    # 'configuration': {
+    #             'interfaces': {
+    #                 'interface': {
+    #                     'name': 'ge-0/0/1',
+    #                     'vlan-id' : '123',
+    #                     'encapsulation' : 'vlan-ccc',
+    #                     'output-vlan-map' : {
+    #                        'swap': [None]
+    #                     },
+    field_value = out.q.get_values('interface', 0)
+
     return field_value if field_value else None
