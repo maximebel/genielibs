@@ -8207,7 +8207,7 @@
       "module_name": "configuration.get",
       "package": "genie.libs.sdk.apis",
       "uid": "get_configuration_protocols_l2circuit",
-      "url": "https://github.com/CiscoTestAutomation/genielibs/tree/master/pkgs/sdk-pkg/src/genie/libs/sdk/apis/junos/configuration/get.py#L148"
+      "url": "https://github.com/CiscoTestAutomation/genielibs/tree/master/pkgs/sdk-pkg/src/genie/libs/sdk/apis/junos/configuration/get.py#L150"
     }
   },
   "get_configured_bgp_peers": {
