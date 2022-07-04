@@ -471,7 +471,7 @@
       "module_name": "flow.configure",
       "package": "genie.libs.sdk.apis",
       "uid": "clear_flow_exporter_statistics",
-      "url": "https://github.com/CiscoTestAutomation/genielibs/tree/master/pkgs/sdk-pkg/src/genie/libs/sdk/apis/iosxe/flow/configure.py#L648"
+      "url": "https://github.com/CiscoTestAutomation/genielibs/tree/master/pkgs/sdk-pkg/src/genie/libs/sdk/apis/iosxe/flow/configure.py#L645"
     }
   },
   "clear_flow_monitor": {
@@ -490,6 +490,15 @@
       "package": "genie.libs.sdk.apis",
       "uid": "clear_flow_monitor_statistics",
       "url": "https://github.com/CiscoTestAutomation/genielibs/tree/master/pkgs/sdk-pkg/src/genie/libs/sdk/apis/iosxe/flow/configure.py#L98"
+    }
+  },
+  "clear_flow_monitor_statistics_for_et_analytics": {
+    "iosxe": {
+      "doc": " Clears Flow Monitor statistics on device\n    \n        Args:\n            device ('obj'): Device object\n\n        Return:\n            None\n\n        Raise:\n            SubCommandFailure: Failed configuring interface\n    ",
+      "module_name": "flow.configure",
+      "package": "genie.libs.sdk.apis",
+      "uid": "clear_flow_monitor_statistics_for_et_analytics",
+      "url": "https://github.com/CiscoTestAutomation/genielibs/tree/master/pkgs/sdk-pkg/src/genie/libs/sdk/apis/iosxe/flow/configure.py#L731"
     }
   },
   "clear_ikev2_sa": {
@@ -2570,7 +2579,7 @@
       "module_name": "flow.configure",
       "package": "genie.libs.sdk.apis",
       "uid": "configure_et_analytics",
-      "url": "https://github.com/CiscoTestAutomation/genielibs/tree/master/pkgs/sdk-pkg/src/genie/libs/sdk/apis/iosxe/flow/configure.py#L669"
+      "url": "https://github.com/CiscoTestAutomation/genielibs/tree/master/pkgs/sdk-pkg/src/genie/libs/sdk/apis/iosxe/flow/configure.py#L666"
     }
   },
   "configure_ethernet_vlan_unlimited": {
@@ -6686,7 +6695,7 @@
       "module_name": "flow.configure",
       "package": "genie.libs.sdk.apis",
       "uid": "disable_et_analytics",
-      "url": "https://github.com/CiscoTestAutomation/genielibs/tree/master/pkgs/sdk-pkg/src/genie/libs/sdk/apis/iosxe/flow/configure.py#L693"
+      "url": "https://github.com/CiscoTestAutomation/genielibs/tree/master/pkgs/sdk-pkg/src/genie/libs/sdk/apis/iosxe/flow/configure.py#L687"
     }
   },
   "disable_iox": {
@@ -6967,7 +6976,7 @@
       "module_name": "flow.configure",
       "package": "genie.libs.sdk.apis",
       "uid": "enable_et_analytics",
-      "url": "https://github.com/CiscoTestAutomation/genielibs/tree/master/pkgs/sdk-pkg/src/genie/libs/sdk/apis/iosxe/flow/configure.py#L717"
+      "url": "https://github.com/CiscoTestAutomation/genielibs/tree/master/pkgs/sdk-pkg/src/genie/libs/sdk/apis/iosxe/flow/configure.py#L709"
     }
   },
   "enable_http_server": {
@@ -8769,7 +8778,7 @@
       "module_name": "configuration.get",
       "package": "genie.libs.sdk.apis",
       "uid": "get_configuration_protocols_l2circuit",
-      "url": "https://github.com/CiscoTestAutomation/genielibs/tree/master/pkgs/sdk-pkg/src/genie/libs/sdk/apis/junos/configuration/get.py#L148"
+      "url": "https://github.com/CiscoTestAutomation/genielibs/tree/master/pkgs/sdk-pkg/src/genie/libs/sdk/apis/junos/configuration/get.py#L150"
     }
   },
   "get_configured_bgp_peers": {
@@ -15094,11 +15103,11 @@
   },
   "unconfigure_active_timer_under_et_analytics": {
     "iosxe": {
-      "doc": " unconfigure active timer under  et-analytics\n        \n        Args:\n            device ('obj'): device to use\n            timer ('int'): timer value \n       \n        Return:\n            None\n        \n        Raise:\n            SubCommandFailure\n    ",
+      "doc": " unconfiguring active timer under  et-analytics\n        \n        Args:\n            device ('obj'): device to use\n            timer ('int'): timer value in seconds \n       \n        Return:\n            None\n        \n        Raise:\n            SubCommandFailure\n    ",
       "module_name": "flow.configure",
       "package": "genie.libs.sdk.apis",
       "uid": "unconfigure_active_timer_under_et_analytics",
-      "url": "https://github.com/CiscoTestAutomation/genielibs/tree/master/pkgs/sdk-pkg/src/genie/libs/sdk/apis/iosxe/flow/configure.py#L621"
+      "url": "https://github.com/CiscoTestAutomation/genielibs/tree/master/pkgs/sdk-pkg/src/genie/libs/sdk/apis/iosxe/flow/configure.py#L620"
     }
   },
   "unconfigure_any_radius_server": {
